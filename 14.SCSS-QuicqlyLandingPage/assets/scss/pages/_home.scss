@@ -1,0 +1,191 @@
+#home {
+    .hero-banner {
+      height: 100vh;
+      @include flexBox();
+      gap: 179px;
+      background-color: #fafafa;
+      padding-bottom: 136px;
+      .hero-banner-info {
+        margin-top: 15%;
+        width: 50%;
+        position: relative;
+        h5 {
+          font-size: 18px;
+          font-weight: 700;
+          color: $primary_color;
+          margin-bottom: 24px;
+        }
+        .title {
+          font-size: 64px;
+          font-weight: 700;
+          color: $color_dark;
+          margin-bottom: 32px;
+          position: relative;
+          z-index: 1;
+        }
+        .text {
+          width: 75%;
+          font-size: 24px;
+          color: $color_dark;
+          margin-bottom: 48px;
+        }
+      
+        .sign {
+          background-color: $primary_color;
+          padding: 16px 36px;
+          font-size: 18px;
+          font-family: "Plus Jakarta Sans", sans-serif;
+          color: $color_white;
+          border: none;
+          border-radius: 8px;
+          margin-right: 20px;
+        .project-info{
+          img{
+            position: relative;
+            right: 200px;
+            bottom: 100px;
+          }
+        }
+      
+       
+      }
+      
+      .hero-banner-img {
+        margin-top: 15%;
+        width: 50%;
+        position: relative;
+        .note {
+          display: flex;
+          padding: 17px 21px;
+          column-gap: 24px;
+          position: absolute;
+          background-color: $color_white;
+          right: 20%;
+          top: 8%;
+          border-radius: 8px;
+          z-index: 2;
+          .avatar {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background-color: $secondary_color;
+            display: flex;
+            padding: 2px;
+            img {
+              border: 2px solid $color_white;
+              border-radius: 50%;
+            }
+          }
+          .new {
+            h4 {
+              font-size: 24px;
+              margin-bottom: 7px;
+            }
+            p {
+              color: $primary_color;
+            }
+          }
+        }
+        .photo {
+          position: relative;
+          z-index: 1;
+        }
+        .frame {
+          position: absolute;
+          right: 25%;
+          top: -9%;
+        }
+       
+        .project {
+          display: flex;
+          gap: 19px;
+          padding: 28px 38px 24px 31px;
+          width: 432px;
+          height: 193px;
+          background-color: $color_white;
+          position: absolute;
+          bottom: -15%;
+          right: 46%;
+          border-radius: 12px;
+          z-index: 2;
+          .icon {
+            position: relative;
+            width: 64px;
+            height: 64px;
+            background-color: $color_light;
+            border-radius: 50%;
+            img {
+              position: absolute;
+              top: 33%;
+              left: 33%;
+              color: $primary_color;
+            }
+          }
+          .project-info {
+            h4 {
+              color: $primary_color;
+            }
+            .team-about{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+            .line {
+              width: 273px;
+              height: 11px;
+              margin-top: 16px;
+              background-color: rgba(30, 77, 86, 0.1);
+              border-radius: 12px;
+            }
+            .footer{
+              display: none;
+            }
+          
+          }
+        }
+      }
+      @media only screen and (max-width: 777px) {
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        row-gap: 10px;
+        
+
+      }
+    
+ 
+      .team-img {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 57px;
+        row-gap: 63px;
+        padding: 0 130px;
+        div {
+          color: $color_dark;
+          h4 {
+            margin-top: 16px;
+            margin-bottom: 8px;
+            font-size: 24px;
+          }
+          p {
+            margin-bottom: 30px;
+            font-size: 18px;
+          }
+          .fa-brands {
+            color: $color_dark;
+          }
+          .social-icon {
+            margin: 0 40px;
+          }
+    
+          .team-about {
+            p {
+              width: 60%;
+            }
+          }
+          .team-img {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+          }
+      
+   
